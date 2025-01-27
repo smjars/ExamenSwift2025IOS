@@ -44,7 +44,7 @@ class ViewController: UIViewController,
         self.tableView.dataSource = self
         
         
-        MovieProvider.searchByName(query: "Mario", completionHandler: { [weak self] results in
+        MovieProvider.searchByName(query: "Goku", completionHandler: { [weak self] results in
             self?.movieList = results
             DispatchQueue.main.async {
                 self?.tableView.reloadData()
